@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f4ed;
+    color: #292929;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #3f392d;
+    color: white;
+    padding: 70px 20px;
+}
+
+.capa {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.titulo-trabalho {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #e6d48a;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 25px 0;
+}
+
+header h1 span {
+    color: #e3c75b;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #e3c75b;
+    color: #292929;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #ddd6c6;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: #51472e;
+    text-decoration: none;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+section h2 {
+    color: #5b4a25;
+    font-size: 30px;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #d9c36b;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #5b4a25;
+    margin-top: 0;
+}
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.info-card {
+    background-color: white;
+    border: 1px solid #ddd6c6;
+    border-radius: 15px;
+    padding: 22px;
+}
+
+.info-card strong {
+    color: #7a642c;
+}
+
+.info-card p {
+    margin-bottom: 0;
+}
+
+.caixa {
+    background-color: white;
+    border: 1px solid #ddd6c6;
+    border-radius: 15px;
+    padding: 28px;
+    margin: 25px 0;
+}
+
+.caixa p:last-child {
+    margin-bottom: 0;
+}
+
+figure {
+    margin: 45px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    max-height: 450px;
+    border: 1px solid #ccc5b6;
+    border-radius: 5px;
+}
+
+figcaption {
+    color: #666;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.usos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.usos .caixa {
+    margin: 0;
+}
+
+.fontes {
+    padding-left: 25px;
+}
+
+.fontes li {
+    background-color: white;
+    border: 1px solid #ddd6c6;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 18px;
+}
+
+.fontes a {
+    color: #5b4a25;
+    word-break: break-word;
+}
+
+/* Parte da criadora e dos colaboradores */
+
+.criadora {
+    background-color: white;
+    border: 1px solid #ddd6c6;
+    border-radius: 15px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.criadora img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ccc5b6;
+}
+
+.dados-criadora h3 {
+    margin-bottom: 10px;
+}
+
+.dados-criadora p {
+    margin: 6px 0;
+}
+
+.colaboradores {
+    margin-top: 0;
+}
+
+.colaboradores p {
+    margin: 8px 0;
+}
+
+footer {
+    background-color: #3f392d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Deixa o site melhor em telas menores */
+
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .informacoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .usos {
+        grid-template-columns: 1fr;
+    }
+
+    .criadora {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .informacoes {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .criadora img {
+        width: 150px;
+        height: 150px;
+    }
+}
