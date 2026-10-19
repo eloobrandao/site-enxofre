@@ -168,7 +168,6 @@ figcaption {
     word-break: break-word;
 }
 
-/* Parte da criadora e dos colaboradores */
 
 .criadora {
     background-color: white;
@@ -205,6 +204,41 @@ figcaption {
     margin: 8px 0;
 }
 
+
+.orientadores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.orientador {
+    background-color: white;
+    border: 1px solid #ddd6c6;
+    border-radius: 15px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.orientador img {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc5b6;
+}
+
+.orientador h3 {
+    color: #5b4a25;
+    margin: 0 0 10px;
+}
+
+.orientador p {
+    margin: 0;
+}
+
 footer {
     background-color: #3f392d;
     color: white;
@@ -216,7 +250,7 @@ footer p {
     margin: 5px;
 }
 
-/* Deixa o site melhor em telas menores */
+
 
 @media (max-width: 800px) {
     header h1 {
@@ -234,6 +268,10 @@ footer p {
     .criadora {
         flex-direction: column;
         text-align: center;
+    }
+
+    .orientadores {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -253,5 +291,10 @@ footer p {
     .criadora img {
         width: 150px;
         height: 150px;
+    }
+
+    .orientador {
+        flex-direction: column;
+        text-align: center;
     }
 }
